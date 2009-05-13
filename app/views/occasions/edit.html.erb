@@ -1,0 +1,20 @@
+<h1>Editing occasion</h1>
+
+<% form_for(@occasion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @occasion %> |
+<%= link_to 'Back', occasions_path %>

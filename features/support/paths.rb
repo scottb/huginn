@@ -10,9 +10,6 @@ module NavigationHelpers
     
     when /the homepage/
       '/'
-    when /the new occasion page/
-      new_occasion_path
-
     
     # Add more mappings here.
     # Here is a more fancy example:
